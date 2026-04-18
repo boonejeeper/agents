@@ -1,26 +1,29 @@
 propose:
   description: >
-    You are proposing the motion: {motion}.
-    Come up with a clear argument in favor of the motion.
-    Be very convincing.
+    You are proposing the motion: {motion}. Your task is to present a compelling argument 
+    in favor of this motion, providing evidence and reasoning to support your position. 
+    Make sure to address potential counterarguments and explain why your stance is the most valid.
   expected_output: >
-    Your clear argument in favor of the motion, in a concise manner.
+    Your clear argument in favor of the motion, supported by evidence and reasoning in a concise manner.
   agent: debater
   output_file: output/propose.md
 
 oppose:
   description: >
-    You are in opposition to the motion: {motion}.
-    Come up with a clear argument against the motion.
-    Be very convincing.
+    You are opposing the motion: {motion}. Your task is to present a compelling argument 
+    against this motion, providing evidence and reasoning to support your position. 
+    Make sure to address potential counterarguments and explain why your stance is the most valid.
   expected_output: >
-    Your clear argument against the motion, in a concise manner.
+    Your clear argument against the motion, supported by evidence and reasoning in a concise manner.
   agent: debater
   output_file: output/oppose.md
+
 decide:
   description: >
-    Review the arguments presented by the debaters and decide which side is more convincing.
+    You are the judge for the debate on the motion: {motion}. Your task is to evaluate the arguments presented by
+    both sides and determine which side made a stronger case. Consider the logic, evidence, and presentation of each
+    argument, and provide a clear explanation for your decision.
   expected_output: >
-    Your decision on which side is more convincing, and why.
+    A clear decision on which side won the debate, along with an explanation of the reasoning behind your judgment.
   agent: judge
-  output_file: output/decide.md
+  output_file: output/decision.md
